@@ -1,0 +1,44 @@
+C009	0000		jmp	start	skip around the variables
+0000	0001	i	dw	0	int i
+0000	0002	temp	dw	0	int temp
+6027	0003	subit	dw	6027	subtract value at index i 
+0000	0004	zero	dw	0	
+0001	0005	one	dw	1	
+0003	0006	n	dw	n	size of array
+3027	0007	loadit	dw	3027	load value at index i 
+4002	0008	storeit	dw	4002	store value at index i in temp
+3001	0009		load	i	load i for manipulation 
+3005	000a		load	one	
+4001	000b		store	i	i = 1
+3006	000c	loop	load n	n	if ( i > n) then go to exit
+6001 	000d		sub  	i	(n-i) 
+E023	000e		jumpl	exit	if (n-i) < 0 exit 
+3007	000f		load		load the loading instructions  
+5005	0010		add	1	add 1 to get next value in array
+4007	0011		store	loadit	store new loading instructions
+3003	0012		load	subit	load subtraction instructions
+5001	0013		add	1	add one to get next value in array
+4016	0014		store	subit	store instructions at line 16
+3002	0015		load 	temp	load temp for manipulation
+0000	0016		subit		subtract value in array from temp
+E019	0017		jmpl	xit	
+C01e	0018		jump		
+3007	0019		load	loadit	load loading instructions 
+401c	001a		store		store at line 01c 
+3002	001b		load 	temp
+0000	001c		load	loadit	load value in array
+4002	001d		store		store value in array as temp
+3001	001e		load 	i	
+5005	001f		add 	1	add 1 to i
+4001	0020		store	i	store new value of i
+C00c	0021		jmp	jump	re-loop 
+0000	0022		
+3002	0023		load	temp	load temp
+1800	0024		print	temp	print temp value
+0000	0025
+0000	0026
+0000	0027
+0002	0028				Array Value 1
+0001	0029				Array Value 2
+0004	003a				Array Value 3
+0000	003b

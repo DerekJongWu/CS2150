@@ -1,0 +1,86 @@
+//Derek Wu
+//djw4yv
+
+#include "BinarySearchTree.h"
+#include <iostream>
+#include <string>
+#include <cstring> 
+
+using namespace std; 
+
+BinarySearchTree :: BinarySearchTree() { 
+  BinaryNode *root = new BinaryNode(); 
+  root -> left = NULL; 
+  root -> right = NULL; 
+}
+
+BinarySearchTree :: ~BinarySearchTree() { 
+
+}
+
+void BinarySearchTree :: insert(const string& x) { 
+  insert(x, root); 
+}
+
+void BinarySearchTree :: remove(const string& x) { 
+
+}
+
+string BinarySearchTree :: pathTo(const string &x) {
+
+}
+
+bool BinarySearchTree :: find(const string &x) { 
+
+}
+
+int BinarySearchTree :: numNodes() { 
+  return PnumNodes(root); 
+} 
+void BinarySearchTree :: Pinsert(const string &x, BinaryNode *b) { 
+  if (b -> left == NULL && b -> right == NULL) { 
+    BinaryNode *n = new BinaryNode(); 
+    n -> value = x; 
+    n -> left = NULL; 
+    n -> right = NULL; 
+  }
+
+  if ((b -> value) > x) { 
+    b -> right = Pinsert(x, b -> right); 
+  }
+
+  else { 
+    b -> left = Pinsert(x, b -> left); 
+  } 
+}
+
+void BinarySearchTree :: Premove(const string &x, BinaryNode *b) {
+  BinaryNode *temp = new BinaryNode(); 
+
+} 
+
+
+}
+
+bool BinarySearchTree :: Pfind(const string& x, BinaryNode *b) const { 
+  if (b -> value == x) { 
+    return true; 
+  }
+  if (b -> value > x) { 
+    return Pfind(x, b-> left); 
+  } 
+  else { 
+    return Pfind(x, b-> right); 
+  }
+
+}
+
+int BinarySearchTree :: PnumNodes(BinaryNode *b) const { 
+  int count = 1; 
+  if (b -> left == NULL && b -> right == NULL) { 
+    return count + 1; 
+  }
+  else { 
+    return count + PnumNodes(b -> left) + PnumNodes(b -> right);
+  }
+} 

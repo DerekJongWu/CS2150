@@ -1,0 +1,27 @@
+C008	0000	jmp to start	
+0000	0001	var1   		var1		initializing variable1	
+0000	0002	var2            var2		initializing variable2
+0000	0003	var3            var3		initializing variable3
+0000	0004	sum		sum		initializing sum 
+0001	0005	one		one	1 	initializing one	
+0000	0006	zero		zero	0	initializing zero
+0000	0007	
+1000	0008	start		read		read input from keyboard
+4001	0009			store	var1	store the input into var1
+1000	000a			read		read input from keyboard
+4002	000b			store	var2	store the input into var2
+1000	000c			read		read input from keyboard
+4003	000d			store	var3	store input into var3
+3004	000e			load	sum	load sum for manipulation
+5001	000f			add	var1	add var1 to sum		
+5002	0010			add	var2	add var2 to sum
+5003	0011			add	var3	add var3 to sum
+D014	0012	jmp		jmp	exit	jump to address 14 if =0
+C008	0013	jmp		jmp	back	go back to the beginning(8)
+3001	0014			load	var1	load var1
+1800	0015			print	var1	print var1 to console
+3002	0016			load	var2	load var2
+1800	0017			print 	var2	print var2
+3003	0018			load 	var3	load var3
+1800	0019			print	var3	print var3
+0000	001a			halt	

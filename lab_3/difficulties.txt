@@ -1,0 +1,3 @@
+//dificulties.txt
+
+A lot of the problems with getting the code to compile was working with the reading in txt files. A lot of the methods such as atoi() required a sepcific type of input type that wasn't a string. Keeping track of what variable type needed to be used was difficult. It took a lot of trial and error as well as using the lldb debugger to finally resolve the issue. 

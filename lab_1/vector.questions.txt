@@ -1,0 +1,5 @@
+//Derek Wu
+//djw4yv
+//Vector questions
+
+When looking at the codes, I was wondering what the push back method does. I assume that it inputs the string into the library, but I am not quite sure. 

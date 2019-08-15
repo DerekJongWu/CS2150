@@ -1,0 +1,24 @@
+//Derek Wu 
+//djw4yv
+//TestListNode.cpp 
+
+#include "ListNode.h"
+#include <iostream>
+using namespace std; 
+
+int main() {
+  ListNode();
+  cout << "You made a node!" << endl;
+
+  ListNode *next = NULL;
+  ListNode *previous = NULL; 
+
+  if (next == NULL) 
+    cout << "Pointer next exists!" << endl;   
+  if (previous == NULL) 
+    cout << "Pointer previous exists!" << endl;
+}
+
+
+
+

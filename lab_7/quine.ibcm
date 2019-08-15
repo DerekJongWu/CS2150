@@ -1,0 +1,26 @@
+C008	0000		jmp		go to loop
+0000	0001	i		
+0002	0002		
+0003	0003		
+0018	0004	#lines
+3000	0005	loadit
+0000	0006	zero
+0001	0007	one
+3001	0008		load	i
+3006	0009		load 	0
+4001	000A		store	i = 0	initialize the iterator to 0
+3004	000B		load	n   	loop
+6001	000C		sub	n-i	
+E01A	000D		jumpl		jump to end of code if negative
+3005	000E	loadit	load		
+4010	000F		store	loadit
+0000	0010	doit			load the command
+1800	0011		print
+3001	0012		load	i	
+5007	0013		add	i + 1 	increment the loop
+4001	0014		store	i
+3005	0015	loadit	load	loadit	
+5007	0016		add	loadit+1
+4005	0017		store	loadit	increment loadit to read next line
+C00B	0018		jmp		jump back to beginning of loop
+0000	0019	halt	halt		stop the program

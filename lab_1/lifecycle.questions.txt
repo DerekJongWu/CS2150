@@ -1,0 +1,5 @@
+//Derek Wu
+//djw4yv
+//lifecycle question
+
+When looking at the output of the lifecycle file, I was wondering whether the destructor always prints out. Specifically after the end of the main function. 

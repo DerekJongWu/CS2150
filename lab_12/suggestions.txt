@@ -1,0 +1,9 @@
+//Derek Wu 
+//8AM Lab
+//Lab-12 Suggestions.txt
+
+I personally thought that this class was an adequate course load given the importance of this class in the computer science curriculum. There was only one thing that I think can be improved. Lab-5 AVL trees were extremely difficult. There was so much time spent on trying to implement the rotations. I feel like this was not extremely helpful as I had already learned how to rotate trees, but implementing it cost a lot of time for very little benefit. 
+
+In addition, I really liked the transition from IBCM to x86 assembly code, however I feel like there should be less emphasis on IBCM and more on x86. I found x86 significantly more confusing and felt like more class time on x86 could be more helpful than IBCM. 
+
+Overall, I felt like the class had an appropriate workload and that the labs are structured well to teach everything necessary for the class.

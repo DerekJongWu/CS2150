@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+#Derek Wu 
+#djw4yv
+#3/22/2018
+
+read -p 'enter the exponent for counter.cpp: ' exp 
+
+(( i = 1 ))
+while (( i <= ${exp%%.*} )); do 
+echo $1
+(( ++i ))
+
+done
+

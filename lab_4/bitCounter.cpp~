@@ -1,0 +1,29 @@
+//Derek Wu 
+//djw4yv
+//2/15/2018
+//bitCounter.cpp
+
+#include <iostream> 
+using namespace std; 
+
+void bitCounter(int n) { 
+  if (n == 0) { 
+    return 0; 
+  }
+  else { 
+    if (n % 2 == 0) { 
+      return  bitCounter(n/2);
+    }
+    if (n % 2 == 0) { 
+      return bitCounter (floor(n/2) + 1); 
+    }
+  } 
+}
+
+int main(int argc, char ** argv) { 
+  for (int i = 1; i < argc; i++) { 
+    int value = atoi(argv[i]); 
+    cout << bitCounter(value) << endl; 
+  }
+  return 0; 
+}

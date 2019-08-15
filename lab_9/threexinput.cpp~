@@ -1,0 +1,27 @@
+//Derek Wu 
+
+#include <iostream> 
+#include <cstdlib> 
+#include "timer.h" 
+
+using namespace std; 
+
+extern "C" int threexplusone(int); 
+
+int main() { 
+  timer t; 
+  int x;
+  cout << "Enter a value: "; 
+  cin >> x;
+  t.start();  
+  cout << threexplusone(x) ;
+  t.stop();
+  cout << endl;
+  cout << "Time take: ";
+  double tot = t.getTime()*1000;
+  cout << tot;
+  cout << "ms";
+  cout << endl;    
+  return 0;
+
+}
