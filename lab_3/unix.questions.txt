@@ -1,6 +1,0 @@
-//Derek Wu 
-//djw4yv
-//2/2/2018
-//unix.questions.txt 
-
-when writing code files, what are the files that have a squiggly in front of the file name? 

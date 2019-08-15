@@ -1,5 +1,0 @@
-//Derek Wu 
-//djw4yv
-//PostLab Question
-
-When looking at the code, I was wondering what the difference between the tail and the head was. 
