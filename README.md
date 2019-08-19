@@ -1,5 +1,5 @@
 # CS2150
-
+###Author: Derek Wu
 This course focused on data structures and algorithms. Many of the assignments involved the implementation of data structures and consequently using those data structures to solve problems. 
 
 ## Lab1 
